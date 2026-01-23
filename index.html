@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>H4XRUMS | Secure Digital Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Anonymous_emblem-svg-imagetourl.cloud-1768441032279-ok2kdu.png">
+    <!-- Mobile Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Prevent电话号码自动检测 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <!-- iOS Web App -->
+    <link rel="apple-touch-icon" href="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Anonymous_emblem-svg-imagetourl.cloud-1768441032279-ok2kdu.png">
+    <meta name="apple-mobile-web-app-title" content="H4XRUMS">
+
+    <!-- Android Web App -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="data:application/manifest+json,{}">
+</head>
+<body>
+    <!-- Security Overlay -->
+    <div id="securityAlert" class="security-overlay">
+        <div class="security-modal">
+            <h2>⛔ SECURITY VERIFICATION REQUIRED</h2>
+            <p>Checking Tor connectivity and threat level...</p>
+            <div class="security-status">
+                <p id="torCheck">🔍 Verifying Tor Connection...</p>
+                <p id="threatCheck">🔍 Scanning for forensic tools...</p>
+                <p id="ipCheck">🔍 Validating session...</p>
+            </div>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="mainContainer" class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-section">
+                <img src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Anonymous_emblem-svg-imagetourl.cloud-1768441032279-ok2kdu.png" alt="Anonymous Logo" class="logo">
+                <h1>H4XR<span class="blink">U</span>MS</h1>
+                <p class="tagline">Secure Digital Solutions Marketplace</p>
+            </div>
+            <nav class="navbar">
+                <a href="#home" class="nav-link active" onclick="showPage('home')">🏠 Home</a>
+                <a href="#tools" class="nav-link" onclick="showPage('tools')">🛠️ Tools</a>
+                <a href="#services" class="nav-link" onclick="showPage('services')">🔧 Services</a>
+                <a href="#tutorials" class="nav-link" onclick="showPage('tutorials')">📚 Tutorials</a>
+                <a href="#contact" class="nav-link" onclick="showPage('contact')">📞 Contact</a>
+                <a href="#convert" class="nav-link" onclick="showPage('convert')">💱 Convert</a>
+            </nav>
+            <div class="session-info">
+                <span id="sessionIndicator">●</span>
+                Session: <span id="sessionID">LOADING...</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Home Page -->
+            <section id="home" class="page active">
+                <div class="hero">
+                    <h2>Welcome to the <span class="highlight">Secure Zone</span></h2>
+                    <p>Premium remote administration, data collection, and identity management solutions. All transactions are encrypted, anonymous, and secure.</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <div class="feature-icon">🔒</div>
+                            <h3>Tor-Only Access</h3>
+                            <p>End-to-end encrypted via .onion routing</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Instant Delivery</h3>
+                            <p>Automated systems deliver within minutes</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">💎</div>
+                            <h3>Premium Quality</h3>
+                            <p>Undetectable, updated, fully featured tools</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h3>🛡️ Operated by: <span class="team-name">THE_DARK-PENTESTERS 💻📸📡</span></h3>
+                    <p>Professional security team since 2018. Specialized in penetration testing, digital forensics, and custom security solutions.</p>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <h4>1,240+</h4>
+                        <p>Successful Transactions</p>
+                    </div>
+                    <div class="stat">
+                        <h4>99.7%</h4>
+                        <p>Undetected Rate</p>
+                    </div>
+                    <div class="stat">
+                        <h4>24/7</h4>
+                        <p>Support Available</p>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h3>Ready to Proceed?</h3>
+                    <p>Browse our tools and services, then follow the secure acquisition tutorial.</p>
+                    <button class="btn-primary" onclick="showPage('tools')">Browse Tools</button>
+                    <button class="btn-secondary" onclick="showPage('tutorials')">View Tutorial</button>
+                </div>
+            </section>
+
+            <!-- Tools Page -->
+            <section id="tools" class="page">
+                <h2 class="page-title">🛠️ Remote Administration Tools</h2>
+                <p class="page-subtitle">Premium RATs, Botnets, and Collection Software</p>
+                
+                <div class="product-grid" id="toolsGrid">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Services Page -->
+            <section id="services" class="page">
+                <h2 class="page-title">🔧 Identity Management Services</h2>
+                <p class="page-subtitle">Social Media & Account Recovery Solutions</p>
+                
+                <div class="service-grid" id="servicesGrid">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Tutorials Page -->
+            <section id="tutorials" class="page">
+                <h2 class="page-title">📚 Secure Acquisition Tutorial</h2>
+                <div class="tutorial-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Get PGP Keys</h3>
+                            <p>Download GnuPG and generate your keypair:</p>
+                            <code class="code-block">gpg --full-generate-key</code>
+                            <p>Export your public key:</p>
+                            <code class="code-block">gpg --export --armor your-email@example.com > public.key</code>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Prepare Your Order</h3>
+                            <p>Format your message exactly:</p>
+                            <code class="code-block">VERIFICATION: THESHADOWPENTESTXX123
+ORDER: [Product Code from item]
+YOUR PUBLIC KEY:
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+[Your key here]
+-----END PGP PUBLIC KEY BLOCK-----</code>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Encrypt & Submit</h3>
+                            <p>Encrypt with today's public key:</p>
+                            <div class="key-display" id="currentKey">
+                                [Loading daily key...]
+                            </div>
+                            <p>Post encrypted message to:</p>
+                            <div class="drop-location" id="dropPoint">
+                                [Secure drop location will be generated]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Receive Instructions</h3>
+                            <p>Check the drop location every 30 minutes. We will reply with:</p>
+                            <ul>
+                                <li>Payment instructions (BTC/XMR)</li>
+                                <li>Secure contact address</li>
+                                <li>Delivery method</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Page -->
+            <section id="contact" class="page">
+                <h2 class="page-title">📞 Secure Contact</h2>
+                <div class="contact-container">
+                    <div class="contact-box">
+                        <h3>🕵️ Generate Encrypted Message</h3>
+                        <textarea id="pgpMessage" placeholder="Type your message here... Include your order details and public key." rows="6"></textarea>
+                        <button class="btn-primary" onclick="generatePGP()">Encrypt Message</button>
+                        
+                        <div class="output-section">
+                            <h4>Encrypted Output:</h4>
+                            <textarea id="encryptedOutput" rows="6" readonly></textarea>
+                            <p class="note">📌 Post this exact text to the drop location from Tutorials.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <h3>📡 Verification Channels</h3>
+                        <div class="channels">
+                            <div class="channel">
+                                <span class="channel-icon">📱</span>
+                                <div>
+                                    <h4>WhatsApp Channel</h4>
+                                    <p>Announcements & updates only</p>
+                                    <small>https://whatsapp.com/channel/0029VbCGi994yItIH1XEwI3B</small>
+                                </div>
+                            </div>
+                            <div class="channel">
+                                <span class="channel-icon">👥</span>
+                                <div>
+                                    <h4>WhatsApp Group</h4>
+                                    <p>Community discussion</p>
+                                    <small>https://chat.whatsapp.com/InxZON1RoxUEDO89QTgv72</small>
+                                </div>
+                            </div>
+                            <div class="channel">
+                                <span class="channel-icon">✈️</span>
+                                <div>
+                                    <h4>Telegram</h4>
+                                    <p>@sonicfazbear67</p>
+                                    <small>Contact only after PGP verification</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <h4>⚠️ SECURITY RULES:</h4>
+                            <ol>
+                                <li>NEVER mention specific tools/services in cleartext</li>
+                                <li>ALWAYS use PGP encryption</li>
+                                <li>Wait for our reply at the drop location</li>
+                                <li>Use Tor for all communications</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Converter Page -->
+            <section id="convert" class="page">
+                <h2 class="page-title">💱 Currency Converter</h2>
+                <div class="converter-container">
+                    <div class="converter-box">
+                        <h3>EGP → Stability Credits (SC)</h3>
+                        <div class="converter-input">
+                            <input type="number" id="egpInput" placeholder="Enter EGP amount" value="350">
+                            <span class="currency">EGP</span>
+                        </div>
+                        <div class="converter-arrow">↓</div>
+                        <div class="converter-output">
+                            <input type="text" id="scOutput" readonly value="1.75">
+                            <span class="currency">SC</span>
+                        </div>
+                        <p class="exchange-rate">Rate: 1 SC = 200 EGP</p>
+                        <button class="btn-primary" onclick="calculateSC()">Calculate</button>
+                    </div>
+                    
+                    <div class="converter-info">
+                        <h4>💡 What are Stability Credits (SC)?</h4>
+                        <p>SC is the primary currency in the Datascape dimension. It represents processed reality and is required for:</p>
+                        <ul>
+                            <li>Premium tool features</li>
+                            <li>Cross-dimensional services</li>
+                            <li>Reality manipulation tools</li>
+                            <li>Secure hosting in the new dimension</li>
+                        </ul>
+                        <p>All prices are listed in EGP. You can pay in EGP or convert to SC for additional features.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Anonymous_emblem-svg-imagetourl.cloud-1768441032279-ok2kdu.png" alt="Logo" class="footer-logo-img">
+                    <div>
+                        <h4>H4XRUMS</h4>
+                        <p>Secure Digital Solutions</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <a href="#home" onclick="showPage('home')">Home</a>
+                    <a href="#tools" onclick="showPage('tools')">Tools</a>
+                    <a href="#tutorials" onclick="showPage('tutorials')">Tutorial</a>
+                    <a href="#contact" onclick="showPage('contact')">Contact</a>
+                </div>
+                
+                <div class="footer-security">
+                    <h5>Security Status</h5>
+                    <p id="securityStatus">● Secure Session Active</p>
+                    <p>Tor: <span id="torStatusText">Verified</span></p>
+                    <p>Threat Level: <span id="threatLevelText">Low</span></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 THE_DARK-PENTESTERS 💻📸📡 | Session: <span id="footerSessionID">XXXXXX</span> | Access via .onion only</p>
+                <p class="disclaimer">All tools and services are for educational and authorized testing purposes only.</p>
+            </div>
+        </footer>
+
+        <!-- Product Modal -->
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <div id="modalContent">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Add this modal after other modals -->
+<div id="purchaseModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('purchaseModal')">&times;</span>
+        <div id="purchaseModalContent"></div>
+    </div>
+</div>
+
+<!-- Add contact section to home page -->
+<div class="contact-simple">
+    <h3>📞 Direct Purchase</h3>
+    <p>Contact us directly with the keyword:</p>
+    <div class="keyword-box">
+        <div class="keyword">SHADOWPENTESTERS</div>
+        <div class="keyword-ar">مخترقون الظلال</div>
+    </div>
+    <div class="contact-channels">
+        <a href="https://t.me/sonicfazbear67" class="contact-channel" target="_blank">
+            <span>📱</span> Telegram: @sonicfazbear67
+        </a>
+        <a href="https://wa.me/201281792737" class="contact-channel" target="_blank">
+            <span>💬</span> WhatsApp: +201281792737
+        </a>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
